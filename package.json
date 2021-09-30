@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/JesusZabdiel/DevWebP2/issues"
   },
-  "homepage": "https://github.com/JesusZabdiel/DevWebP2#readme"
+  "homepage": "https://github.com/JesusZabdiel/DevWebP2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
 }
