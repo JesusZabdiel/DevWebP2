@@ -6,6 +6,7 @@ const sequelize = require('./utils/database')
 const app = express()
 const vjsRoutes = require('./routes/videojuegos')
 const cnlsRoutes = require('./routes/consolas')
+const cvRoutes = require('./routes/consolaVideojuegos')
 
 
 //MIDDLEWARE
@@ -23,6 +24,7 @@ app.use(express.urlencoded({extended:true}))
         // --> Añadir rutas
 app.use('/videojuegos',vjsRoutes)
 app.use('/consolas' , cnlsRoutes)
+app.use('/consolaVideojuegos' , cvRoutes )
 
         
 
