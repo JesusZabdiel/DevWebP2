@@ -29,7 +29,11 @@ exports.postAgregarConsola = (req, res) => {
 
 exports.postBorrarConsola = (req, res) =>{
     console.log(req.body)
-    Consola.destroy({where: req.body.id})
+    Consola.destroy({
+        where: {
+            id: req.body.id
+        }
+    })
         .then(response => {
             console.log("Consola eliminada")
             res.json({estado: "aceptado"})
