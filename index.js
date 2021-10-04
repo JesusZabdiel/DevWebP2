@@ -17,7 +17,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
         //--> EJS
-app.engine('html' , require('ejs').renderFile)
+//app.engine('html' , require('ejs').renderFile)
 
         // --> Añadir rutas
 app.use('/videojuegos',vjsRoutes)
